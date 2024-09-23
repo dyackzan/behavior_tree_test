@@ -1,0 +1,10 @@
+<root BTCPP_format="4" >
+    <BehaviorTree ID="MainTree">
+        <Sequence name="root_sequence">
+            <CreateAnyPoseStampedVector pose_stamped_vector="{any_vec}"/>
+            <ForEachAny vector_in="{any_vec}" out="{any_val}">
+                <AnyToPoseStamped input="{any_val}"/>
+            </ForEachAny>
+        </Sequence>
+    </BehaviorTree>
+</root>
